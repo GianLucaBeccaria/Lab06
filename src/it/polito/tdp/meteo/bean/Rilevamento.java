@@ -1,5 +1,6 @@
 package it.polito.tdp.meteo.bean;
 
+import java.time.Instant;
 import java.util.Date;
 
 public class Rilevamento {
@@ -33,20 +34,22 @@ public class Rilevamento {
 
 	public int getUmidita() {
 		return umidita;
+		
 	}
 
 	public void setUmidita(int umidita) {
 		this.umidita = umidita;
+	
 	}
 
-	// @Override
-	// public String toString() {
-	// return localita + " " + data + " " + umidita;
-	// }
+	 @Override
+	 public String toString() {
+	 return localita + " " + data + " " + umidita;
+	 }
 
-	@Override
-	public String toString() {
-		return String.valueOf(umidita);
-	}
+	//@Override
+	//public String toString() {
+	//	return String.valueOf(umidita);
+	//}
 
 }
